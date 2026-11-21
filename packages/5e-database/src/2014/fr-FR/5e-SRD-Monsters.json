@@ -138,8 +138,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "1d12"
@@ -481,8 +481,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "1d8"
@@ -552,8 +552,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "12d8"
@@ -1645,8 +1645,8 @@
                 "damage": [
                   {
                     "damage_type": {
-                      "index": "acide",
-                      "name": "Acid",
+                      "index": "acid",
+                      "name": "Acide",
                       "url": "/api/2014/damage-types/acide"
                     },
                     "damage_dice": "12d8"
@@ -3094,10 +3094,10 @@
   },
   {
     "index": "air-elemental",
-    "name": "Air Elemental",
+    "name": "Élémentaire de l'air",
     "size": "Grande",
-    "type": "elemental",
-    "alignment": "neutral",
+    "type": "Élémentaire",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -3108,7 +3108,7 @@
     "hit_dice": "12d10",
     "hit_points_roll": "12d10+24",
     "speed": {
-      "fly": "90 ft.",
+      "fly": "27 m.",
       "hover": true
     },
     "strength": 14,
@@ -3121,8 +3121,8 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "foudre",
-      "thunder",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "tonnerre",
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -3130,22 +3130,22 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -3155,17 +3155,17 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
         "index": "unconscious",
-        "name": "Unconscious",
+        "name": "inconscient",
         "url": "/api/2014/conditions/unconscious"
       }
     ],
@@ -3173,32 +3173,32 @@
       "darkvision": "18 m.",
       "passive_perception": 10
     },
-    "languages": "Auran",
+    "languages": "Aérien",
     "challenge_rating": 5,
     "proficiency_bonus": 3,
     "xp": 1800,
     "special_abilities": [
       {
-        "name": "Air Form",
-        "desc": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+        "name": "Forme d'air",
+        "desc": "L'élémentaire peut pénétrer dans l'espace d'une créature hostile et y rester. Il peut se déplacer au travers d'espaces larges de 2,50 cm sans être considéré comme passant dans un espace étroit."
       }
     ],
     "actions": [
       {
         "name": "Attaques multiples",
         "multiattack_type": "actions",
-        "desc": "The elemental makes two slam attacks.",
+        "desc": "L'élémentaire effectue deux attaques de coup.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
-        "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
+        "name": "Coup",
+        "desc": "Attaque au corps à corps avec une arme : +8 au toucher, allonge 1,50 m, une cible. Touché : 14 (2d8 + 5) dégâts contondants.",
         "attack_bonus": 8,
         "damage": [
           {
@@ -3212,8 +3212,8 @@
         ]
       },
       {
-        "name": "Whirlwind",
-        "desc": "Each creature in the elemental's space must make a DC 13 Strength Jets de sauvegarde. On a failure, a target takes 15 (3d8 + 2) bludgeoning damage and is flung up 20 feet away from the elemental in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a DC 13 Dexterity Jets de sauvegarde or take the same damage and be knocked prone.\nIf the Jets de sauvegarde is successful, the target takes half the bludgeoning damage and isn't flung away or knocked prone.",
+        "name": "Cyclone",
+        "desc": "Chaque créature se trouvant dans l'espace de l'élémentaire doit effectuer un jet de sauvegarde de Force DD 13. En cas d'échec, la cible subit 15 (3d8 + 2) dégâts contondants, est projetée à 6 mètres de l'élémentaire dans une direction aléatoire, et se retrouve à terre. Si la cible frappe dans un obstacle, tel un mur, elle subit 3 (1d6) dégâts contondants pour chaque tranche de 3 mètres de distance qu'elle a parcourue. Si la cible est projetée vers une autre créature, celle-ci doit réussir un jet de sauvegarde de Dextérité DD 13 ou subir les mêmes dégâts et se retrouver à terre.\nSi le jet de sauvegarde est réussi, la cible subit la moitié des dégâts contondants et ne se retrouve ni projetée, ni à terre.",
         "usage": {
           "type": "recharge sur lancer",
           "dice": "1d6",
@@ -3226,8 +3226,8 @@
   },
   {
     "index": "ancient-black-dragon",
-    "name": "Ancient Black Dragon",
-    "size": "Gargantuan",
+    "name": "Dragon noir, ancien",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "chaotique mauvais",
     "armor_class": [
@@ -3354,7 +3354,7 @@
       },
       {
         "name": "Morsure",
-        "desc": "Melee Weapon Attack: +15 to hit, reach 15 ft., one target. Hit: 19 (2d10 + 8) piercing damage plus 9 (2d8) acide damage.",
+        "desc": "Attaque au corps à corps avec une arme : +15 au toucher, allonge 4,50 m, une cible. Touché : 19 (2d10 + 8) dégâts perforants + 9 (2d8) dégâts d'acide.",
         "attack_bonus": 15,
         "damage": [
           {
@@ -3367,8 +3367,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "2d8"
@@ -3377,7 +3377,7 @@
       },
       {
         "name": "Griffes",
-        "desc": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) slashing damage.",
+        "desc": "Attaque au corps à corps avec une arme : +15 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.",
         "attack_bonus": 15,
         "damage": [
           {
@@ -3392,7 +3392,7 @@
       },
       {
         "name": "Queue",
-        "desc": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
+        "desc": "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.",
         "attack_bonus": 15,
         "damage": [
           {
@@ -3407,7 +3407,7 @@
       },
       {
         "name": "Présence terrifiante",
-        "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom Jets de sauvegarde or become frightened for 1 minute. A creature can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success. If a creature's Jets de sauvegarde is successful or the effect ends for it, the creature is immune to the dragon's Présence terrifiante for the next 24 hours.",
+        "desc": "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 19 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
         "dc": {
           "dc_type": {
             "index": "wis",
@@ -3420,7 +3420,7 @@
       },
       {
         "name": "Souffle d'acide",
-        "desc": "The dragon exhales acide in a 90-foot line that is 10 feet wide. Each creature in that line must make a DC 22 Dexterity Jets de sauvegarde, taking 67 (15d8) acide damage on a failed save, or half as much damage on a successful one.",
+        "desc": "Le dragon crache un jet d'acide sur une ligne de 27 mètres de long et de 3 mètres de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 22, subissant 67 (15d8) dégâts d'acide en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
         "usage": {
           "type": "recharge sur lancer",
           "dice": "1d6",
@@ -3438,8 +3438,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "15d8"
@@ -3458,7 +3458,7 @@
       },
       {
         "name": "Attaque avec les ailes (coûte 2 actions)",
-        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity Jets de sauvegarde or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "desc": "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 23 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
         "dc": {
           "dc_type": {
             "index": "dex",
@@ -3485,8 +3485,8 @@
   },
   {
     "index": "ancient-blue-dragon",
-    "name": "Ancient Blue Dragon",
-    "size": "Gargantuan",
+    "name": "Dragon bleu, ancien",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "loyal mauvais",
     "armor_class": [
@@ -3609,7 +3609,7 @@
       },
       {
         "name": "Morsure",
-        "desc": "Melee Weapon Attack: +16 to hit, reach 15 ft., one target. Hit: 20 (2d10 + 9) piercing damage plus 11 (2d10) lightning damage.",
+        "desc": "Attaque au corps à corps avec une arme : +16 au toucher, allonge 4,50 m, une cible. Touché : 20 (2d10 + 9) dégâts perforants + 11 (2d10) dégâts de foudre.",
         "attack_bonus": 16,
         "damage": [
           {
@@ -3632,7 +3632,7 @@
       },
       {
         "name": "Griffes",
-        "desc": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) slashing damage.",
+        "desc": "Attaque au corps à corps avec une arme : +16 au toucher, allonge 3 m, une cible. Touché : 16 (2d6 + 9) dégâts tranchants.",
         "attack_bonus": 16,
         "damage": [
           {
@@ -3647,7 +3647,7 @@
       },
       {
         "name": "Queue",
-        "desc": "Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 18 (2d8 + 9) bludgeoning damage.",
+        "desc": "Attaque au corps à corps avec une arme : +16 au toucher, allonge 6 m, une cible. Touché : 18 (2d8 + 9) dégâts contondants.",
         "attack_bonus": 16,
         "damage": [
           {
@@ -3662,7 +3662,7 @@
       },
       {
         "name": "Présence terrifiante",
-        "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 20 Wisdom Jets de sauvegarde or become frightened for 1 minute. A creature can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success. If a creature's Jets de sauvegarde is successful or the effect ends for it, the creature is immune to the dragon's Présence terrifiante for the next 24 hours.",
+        "desc": "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins du dragon et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 20 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures",
         "dc": {
           "dc_type": {
             "index": "wis",
@@ -3675,7 +3675,7 @@
       },
       {
         "name": "Souffle de foudre",
-        "desc": "The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity Jets de sauvegarde, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.",
+        "desc": "Le dragon crache une tempête d'éclairs sur une ligne de 36 mètres de long et de 3 mètres de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 23, subissant 88 (16d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.",
         "usage": {
           "type": "recharge sur lancer",
           "dice": "1d6",
@@ -3713,7 +3713,7 @@
       },
       {
         "name": "Attaque avec les ailes (coûte 2 actions)",
-        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 24 Dexterity Jets de sauvegarde or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "desc": "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 24 ou subir 16 (2d6 + 9) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
         "dc": {
           "dc_type": {
             "index": "dex",
@@ -3741,7 +3741,7 @@
   {
     "index": "ancient-brass-dragon",
     "name": "Ancient Brass Dragon",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "chaotique bon",
     "armor_class": [
@@ -4034,7 +4034,7 @@
   {
     "index": "ancient-bronze-dragon",
     "name": "Ancient Bronze Dragon",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "loyal bon",
     "armor_class": [
@@ -4184,7 +4184,7 @@
       },
       {
         "name": "Griffes",
-        "desc": "Melee Weapon Attack: +16 to hit, reach 10 ft., one target. Hit: 16 (2d6 + 9) slashing damage.",
+        "desc": "Attaque au corps à corps avec une arme : +16 au toucher, allonge 3 m, une cible. Touché : 16 (2d6 + 9) dégâts tranchants.",
         "attack_bonus": 16,
         "damage": [
           {
@@ -4199,7 +4199,7 @@
       },
       {
         "name": "Queue",
-        "desc": "Melee Weapon Attack: +16 to hit, reach 20 ft., one target. Hit: 18 (2d8 + 9) bludgeoning damage.",
+        "desc": "Attaque au corps à corps avec une arme : +16 au toucher, allonge 6 m, une cible. Touché : 18 (2d8 + 9) dégâts contondants.",
         "attack_bonus": 16,
         "damage": [
           {
@@ -4214,7 +4214,7 @@
       },
       {
         "name": "Présence terrifiante",
-        "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 20 Wisdom Jets de sauvegarde or become frightened for 1 minute. A creature can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success. If a creature's Jets de sauvegarde is successful or the effect ends for it, the creature is immune to the dragon's Présence terrifiante for the next 24 hours.",
+        "desc": "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins du dragon et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 20 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures",
         "dc": {
           "dc_type": {
             "index": "wis",
@@ -4227,7 +4227,7 @@
       },
       {
         "name": "Souffles",
-        "desc": "Le dragon utilise l'un des souffles de combat présentés ci-dessous.\nLumièrening Breath. The dragon exhales lightning in a 120-foot line that is 10 feet wide. Each creature in that line must make a DC 23 Dexterity Jets de sauvegarde, taking 88 (16d10) lightning damage on a failed save, or half as much damage on a successful one.\nSouffle répulsif. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 23 Strength Jets de sauvegarde. On a failed save, the creature is pushed 60 feet away from the dragon.",
+        "desc": "Le dragon utilise l'un des souffles de combat présentés ci-dessous.\nLumièrening Breath. Le dragon crache une tempête d'éclairs sur une ligne de 36 mètres de long et de 3 mètres de large. Chaque créature sur cette ligne doit effectuer un jet de sauvegarde de Dextérité DD 23, subissant 88 (16d10) dégâts de foudre en cas d'échec, ou la moitié de ces dégâts en cas de réussite.\nSouffle répulsif. The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 23 Strength Jets de sauvegarde. On a failed save, the creature is pushed 60 feet away from the dragon.",
         "usage": {
           "type": "recharge sur lancer",
           "dice": "1d6",
@@ -4295,7 +4295,7 @@
       },
       {
         "name": "Attaque avec les ailes (coûte 2 actions)",
-        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 24 Dexterity Jets de sauvegarde or take 16 (2d6 + 9) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "desc": "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 24 ou subir 16 (2d6 + 9) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
         "dc": {
           "dc_type": {
             "index": "dex",
@@ -4323,7 +4323,7 @@
   {
     "index": "ancient-copper-dragon",
     "name": "Ancient Copper Dragon",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "chaotique bon",
     "armor_class": [
@@ -4469,7 +4469,7 @@
       },
       {
         "name": "Griffes",
-        "desc": "Melee Weapon Attack: +15 to hit, reach 10 ft., one target. Hit: 15 (2d6 + 8) slashing damage.",
+        "desc": "Attaque au corps à corps avec une arme : +15 au toucher, allonge 3 m, une cible. Touché : 15 (2d6 + 8) dégâts tranchants.",
         "attack_bonus": 15,
         "damage": [
           {
@@ -4484,7 +4484,7 @@
       },
       {
         "name": "Queue",
-        "desc": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
+        "desc": "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.",
         "attack_bonus": 15,
         "damage": [
           {
@@ -4499,7 +4499,7 @@
       },
       {
         "name": "Présence terrifiante",
-        "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom Jets de sauvegarde or become frightened for 1 minute. A creature can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success. If a creature's Jets de sauvegarde is successful or the effect ends for it, the creature is immune to the dragon's Présence terrifiante for the next 24 hours.",
+        "desc": "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 19 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
         "dc": {
           "dc_type": {
             "index": "wis",
@@ -4539,8 +4539,8 @@
                 "damage": [
                   {
                     "damage_type": {
-                      "index": "acide",
-                      "name": "Acid",
+                      "index": "acid",
+                      "name": "Acide",
                       "url": "/api/2014/damage-types/acide"
                     },
                     "damage_dice": "14d8"
@@ -4580,7 +4580,7 @@
       },
       {
         "name": "Attaque avec les ailes (coûte 2 actions)",
-        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity Jets de sauvegarde or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "desc": "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 23 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
         "dc": {
           "dc_type": {
             "index": "dex",
@@ -4608,7 +4608,7 @@
   {
     "index": "ancient-gold-dragon",
     "name": "Ancient Gold Dragon",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "loyal bon",
     "armor_class": [
@@ -4905,7 +4905,7 @@
   {
     "index": "ancient-green-dragon",
     "name": "Ancient Green Dragon",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "loyal mauvais",
     "armor_class": [
@@ -5100,7 +5100,7 @@
       },
       {
         "name": "Queue",
-        "desc": "Melee Weapon Attack: +15 to hit, reach 20 ft., one target. Hit: 17 (2d8 + 8) bludgeoning damage.",
+        "desc": "Attaque au corps à corps avec une arme : +15 au toucher, allonge 6 m, une cible. Touché : 17 (2d8 + 8) dégâts contondants.",
         "attack_bonus": 15,
         "damage": [
           {
@@ -5115,7 +5115,7 @@
       },
       {
         "name": "Présence terrifiante",
-        "desc": "Each creature of the dragon's choice that is within 120 feet of the dragon and aware of it must succeed on a DC 19 Wisdom Jets de sauvegarde or become frightened for 1 minute. A creature can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success. If a creature's Jets de sauvegarde is successful or the effect ends for it, the creature is immune to the dragon's Présence terrifiante for the next 24 hours.",
+        "desc": "Chaque créature que le dragon choisit, se trouvant à 36 mètres ou moins de lui et consciente de sa présence, doit réussir un jet de sauvegarde de Sagesse DD 19 ou être effrayée pendant 1 minute. Une créature peut retenter son jet de sauvegarde à la fin de chacun de ses tours, mettant fin à l'effet qui l'affecte en cas de réussite. Si le jet de sauvegarde d'une créature est une réussite ou si l'effet prend fin pour elle, la créature est immunisée à la Présence terrifiante du dragon pour les prochaines 24 heures.",
         "dc": {
           "dc_type": {
             "index": "wis",
@@ -5166,7 +5166,7 @@
       },
       {
         "name": "Attaque avec les ailes (coûte 2 actions)",
-        "desc": "The dragon beats its wings. Each creature within 15 ft. of the dragon must succeed on a DC 23 Dexterity Jets de sauvegarde or take 15 (2d6 + 8) bludgeoning damage and be knocked prone. The dragon can then fly up to half its flying speed.",
+        "desc": "Le dragon bat des ailes. Chaque créature située à 4,50 mètres ou moins du dragon doit réussir un jet de sauvegarde de Dextérité DD 23 ou subir 15 (2d6 + 8) dégâts contondants et être jetée à terre. Le dragon peut ensuite s'envoler de la moitié de sa vitesse de vol.",
         "dc": {
           "dc_type": {
             "index": "dex",
@@ -5194,7 +5194,7 @@
   {
     "index": "ancient-red-dragon",
     "name": "Ancient Red Dragon",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "chaotique mauvais",
     "armor_class": [
@@ -5449,7 +5449,7 @@
   {
     "index": "ancient-silver-dragon",
     "name": "Ancient Silver Dragon",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "loyal bon",
     "armor_class": [
@@ -5741,7 +5741,7 @@
   {
     "index": "ancient-white-dragon",
     "name": "Ancient White Dragon",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
     "alignment": "chaotique mauvais",
     "armor_class": [
@@ -6085,7 +6085,7 @@
     "damage_resistances": [],
     "damage_immunities": [
       "psychic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "condition_immunities": [
       {
@@ -6251,7 +6251,7 @@
       },
       {
         "name": "Roar",
-        "desc": "The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a Jets de sauvegarde.\n\nFirst Roar. Each creature that fails a DC 18 Wisdom Jets de sauvegarde is frightened for 1 minute. A frightened creature can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success.\n\nSecond Roar. Each creature that fails a DC 18 Wisdom Jets de sauvegarde is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success.\n\nThird Roar. Each creature makes a DC 18 Constitution Jets de sauvegarde. On a failed save, a creature takes 44 (8d10) thunder damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone.",
+        "desc": "The sphinx emits a magical roar. Each time it roars before finishing a long rest, the roar is louder and the effect is different, as detailed below. Each creature within 500 feet of the sphinx and able to hear the roar must make a Jets de sauvegarde.\n\nFirst Roar. Each creature that fails a DC 18 Wisdom Jets de sauvegarde is frightened for 1 minute. A frightened creature can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success.\n\nSecond Roar. Each creature that fails a DC 18 Wisdom Jets de sauvegarde is deafened and frightened for 1 minute. A frightened creature is paralyzed and can repeat the Jets de sauvegarde at the end of each of its turns, ending the effect on itself on a success.\n\nThird Roar. Each creature makes a DC 18 Constitution Jets de sauvegarde. On a failed save, a creature takes 44 (8d10) tonnerre damage and is knocked prone. On a successful save, the creature takes half as much damage and isn't knocked prone.",
         "usage": {
           "type": "par jour",
           "times": 3
@@ -6295,9 +6295,9 @@
             "damage": [
               {
                 "damage_type": {
-                  "index": "thunder",
+                  "index": "tonnerre",
                   "name": "Thunder",
-                  "url": "/api/2014/damage-types/thunder"
+                  "url": "/api/2014/damage-types/tonnerre"
                 },
                 "damage_dice": "8d10"
               }
@@ -6372,7 +6372,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -6382,12 +6382,12 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -6421,14 +6421,14 @@
         "desc": "The armor makes two corps à corps attacks.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) bludgeoning damage.",
         "attack_bonus": 4,
         "damage": [
@@ -6462,7 +6462,7 @@
         "value": 11,
         "condition": {
           "index": "prone",
-          "name": "Prone",
+          "name": "à terre",
           "url": "/api/2014/conditions/prone"
         }
       }
@@ -6510,8 +6510,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "1d6"
@@ -6538,8 +6538,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "3d6"
@@ -7245,7 +7245,7 @@
     ],
     "actions": [
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 14 (3d6 + 4) bludgeoning damage.",
         "attack_bonus": 6,
         "damage": [
@@ -7324,7 +7324,7 @@
     "index": "azer",
     "name": "Azer",
     "size": "Moyenne",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "lawful neutral",
     "armor_class": [
       {
@@ -7638,7 +7638,7 @@
     "damage_resistances": [
       "froid",
       "foudre",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "feu",
@@ -8108,7 +8108,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "froid",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -8442,7 +8442,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "froid",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -8579,7 +8579,7 @@
     ],
     "condition_immunities": [],
     "senses": {
-      "darkvision": "90 ft.",
+      "darkvision": "27 m.",
       "passive_perception": 16
     },
     "languages": "Draconique",
@@ -8676,8 +8676,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "6d6"
@@ -8966,8 +8966,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "1d4"
@@ -8994,8 +8994,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "5d8"
@@ -9053,7 +9053,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -9063,7 +9063,7 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       }
     ],
@@ -9086,8 +9086,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "1d8"
@@ -9115,8 +9115,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "4d8"
@@ -9600,7 +9600,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "froid",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -10675,7 +10675,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "froid",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -10736,7 +10736,7 @@
       },
       {
         "name": "Animate Chains",
-        "desc": "Up to four chains the devil can see within 60 feet of it magically sprout razor-edged barbs and animate under the devil's control, provided that the chains aren't being worn or carried.\nEach animated chain is an object with AC 20, 20 hit points, resistance to piercing damage, and immunity to psychic and thunder damage. When the devil uses Attaques multiples on its turn, it can use each animated chain to make one additional chain attack. An animated chain can grapple one creature of its own but can't make attacks while grappling. An animated chain reverts to its inanimate state if reduced to 0 hit points or if the devil is incapacitated or dies.",
+        "desc": "Up to four chains the devil can see within 60 feet of it magically sprout razor-edged barbs and animate under the devil's control, provided that the chains aren't being worn or carried.\nEach animated chain is an object with AC 20, 20 hit points, resistance to piercing damage, and immunity to psychic and tonnerre damage. When the devil uses Attaques multiples on its turn, it can use each animated chain to make one additional chain attack. An animated chain can grapple one creature of its own but can't make attacks while grappling. An animated chain reverts to its inanimate state if reduced to 0 hit points or if the devil is incapacitated or dies.",
         "usage": {
           "type": "recharge after rest",
           "rest_types": [
@@ -11138,7 +11138,7 @@
       "acide",
       "poison",
       "psychic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't adamantine"
     ],
     "condition_immunities": [
       {
@@ -11148,7 +11148,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -11158,12 +11158,12 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -11209,14 +11209,14 @@
         "desc": "The golem makes two slam attacks.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +8 to hit, reach 5 ft., one target. Hit: 16 (2d10 + 5) bludgeoning damage. If the target is a creature, it must succeed on a DC 15 Constitution Jets de sauvegarde or have its hit point maximum reduced by an amount equal to the damage taken. The target dies if this attack reduces its hit point maximum to 0. The reduction lasts until removed by the greater restoration spell or other magic.",
         "attack_bonus": 8,
         "damage": [
@@ -11930,8 +11930,8 @@
                 "damage": [
                   {
                     "damage_type": {
-                      "index": "acide",
-                      "name": "Acid",
+                      "index": "acid",
+                      "name": "Acide",
                       "url": "/api/2014/damage-types/acide"
                     },
                     "damage_dice": "4d8"
@@ -11976,7 +11976,7 @@
     "hit_points_roll": "13d8+39",
     "speed": {
       "walk": "9 m.",
-      "fly": "90 ft."
+      "fly": "27 m."
     },
     "strength": 16,
     "dexterity": 20,
@@ -12016,7 +12016,7 @@
     ],
     "damage_immunities": [
       "psychic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "condition_immunities": [],
     "senses": {
@@ -13034,7 +13034,7 @@
     "hit_points_roll": "16d8+64",
     "speed": {
       "walk": "9 m.",
-      "fly": "90 ft."
+      "fly": "27 m."
     },
     "strength": 18,
     "dexterity": 18,
@@ -13079,7 +13079,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "radiant",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -13090,7 +13090,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -13299,7 +13299,7 @@
     "index": "djinni",
     "name": "Djinni",
     "size": "Grande",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "chaotique bon",
     "armor_class": [
       {
@@ -13312,7 +13312,7 @@
     "hit_points_roll": "14d10+84",
     "speed": {
       "walk": "9 m.",
-      "fly": "90 ft."
+      "fly": "27 m."
     },
     "strength": 21,
     "dexterity": 15,
@@ -13350,14 +13350,14 @@
     "damage_resistances": [],
     "damage_immunities": [
       "foudre",
-      "thunder"
+      "tonnerre"
     ],
     "condition_immunities": [],
     "senses": {
       "darkvision": "36 m.",
       "passive_perception": 13
     },
-    "languages": "Auran",
+    "languages": "Aérien",
     "challenge_rating": 11,
     "proficiency_bonus": 4,
     "xp": 7200,
@@ -13368,7 +13368,7 @@
       },
       {
         "name": "Innate Incantation",
-        "desc": "The djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: detect evil and good, detect magic, thunderwave\n3/day each: create food and water (can create wine instead of water), tongues, wind walk\n1/day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift",
+        "desc": "The djinni's innate spellcasting ability is Charisma (spell save DC 17, +9 to hit with spell attacks). It can innately cast the following spells, requiring no material components:\n\nAt will: detect evil and good, detect magic, tonnerrewave\n3/day each: create food and water (can create wine instead of water), tongues, wind walk\n1/day each: conjure elemental (air elemental only), creation, gaseous form, invisibility, major image, plane shift",
         "spellcasting": {
           "ability": {
             "index": "cha",
@@ -13401,7 +13401,7 @@
             {
               "name": "Thunderwave",
               "level": 1,
-              "url": "/api/2014/spells/thunderwave",
+              "url": "/api/2014/spells/tonnerrewave",
               "usage": {
                 "type": "at will"
               }
@@ -13508,7 +13508,7 @@
       },
       {
         "name": "Scimitar",
-        "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 3 (1d6) lightning or thunder damage (djinni's choice).",
+        "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 12 (2d6 + 5) slashing damage plus 3 (1d6) lightning or tonnerre damage (djinni's choice).",
         "attack_bonus": 9,
         "damage": [
           {
@@ -13537,9 +13537,9 @@
                 {
                   "option_type": "damage",
                   "damage_type": {
-                    "index": "thunder",
+                    "index": "tonnerre",
                     "name": "Thunder",
-                    "url": "/api/2014/damage-types/thunder"
+                    "url": "/api/2014/damage-types/tonnerre"
                   },
                   "damage_dice": "1d6"
                 }
@@ -13647,14 +13647,14 @@
         "desc": "The doppelganger makes two corps à corps attacks.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 7 (1d6 + 4) bludgeoning damage.",
         "attack_bonus": 6,
         "damage": [
@@ -13735,9 +13735,9 @@
   {
     "index": "dragon-turtle",
     "name": "Dragon Turtle",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "dragon",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -14539,7 +14539,7 @@
     "special_abilities": [
       {
         "name": "Incantation",
-        "desc": "The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:\n\n- Cantrips (at will): druidcraft, produce flame, shillelagh\n- 1st level (4 slots): entangle, longstrider, speak with animals, thunderwave\n- 2nd level (3 slots): animal messenger, barkskin",
+        "desc": "The druid is a 4th-level spellcaster. Its spellcasting ability is Wisdom (spell save DC 12, +4 to hit with spell attacks). It has the following druid spells prepared:\n\n- Cantrips (at will): druidcraft, produce flame, shillelagh\n- 1st level (4 slots): entangle, longstrider, speak with animals, tonnerrewave\n- 2nd level (3 slots): animal messenger, barkskin",
         "spellcasting": {
           "level": 4,
           "ability": {
@@ -14593,7 +14593,7 @@
             {
               "name": "Thunderwave",
               "level": 1,
-              "url": "/api/2014/spells/thunderwave"
+              "url": "/api/2014/spells/tonnerrewave"
             },
             {
               "name": "Animal Messenger",
@@ -14665,7 +14665,7 @@
     "name": "Dryad",
     "size": "Moyenne",
     "type": "fey",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -14964,7 +14964,7 @@
     "index": "dust-mephit",
     "name": "Dust Mephit",
     "size": "Small",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "neutral evil",
     "armor_class": [
       {
@@ -15021,7 +15021,7 @@
       "darkvision": "18 m.",
       "passive_perception": 12
     },
-    "languages": "Auran, Terran",
+    "languages": "Aérien, Terran",
     "challenge_rating": 0.5,
     "proficiency_bonus": 2,
     "xp": 100,
@@ -15181,8 +15181,8 @@
     "index": "earth-elemental",
     "name": "Earth Elemental",
     "size": "Grande",
-    "type": "elemental",
-    "alignment": "neutral",
+    "type": "Élémentaire",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -15204,10 +15204,10 @@
     "charisma": 5,
     "proficiencies": [],
     "damage_vulnerabilities": [
-      "thunder"
+      "tonnerre"
     ],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -15215,17 +15215,17 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -15235,7 +15235,7 @@
       },
       {
         "index": "unconscious",
-        "name": "Unconscious",
+        "name": "inconscient",
         "url": "/api/2014/conditions/unconscious"
       }
     ],
@@ -15262,17 +15262,17 @@
       {
         "name": "Attaques multiples",
         "multiattack_type": "actions",
-        "desc": "The elemental makes two slam attacks.",
+        "desc": "L'élémentaire effectue deux attaques de coup.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +8 to hit, reach 10 ft., one target. Hit: 14 (2d8 + 5) bludgeoning damage.",
         "attack_bonus": 8,
         "damage": [
@@ -15294,7 +15294,7 @@
     "index": "efreeti",
     "name": "Efreeti",
     "size": "Grande",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "loyal mauvais",
     "armor_class": [
       {
@@ -15754,7 +15754,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "froid",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -16182,8 +16182,8 @@
     "index": "fire-elemental",
     "name": "Fire Elemental",
     "size": "Grande",
-    "type": "elemental",
-    "alignment": "neutral",
+    "type": "Élémentaire",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -16205,7 +16205,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "feu",
@@ -16214,22 +16214,22 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -16239,17 +16239,17 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
         "index": "unconscious",
-        "name": "Unconscious",
+        "name": "inconscient",
         "url": "/api/2014/conditions/unconscious"
       }
     ],
@@ -16455,7 +16455,7 @@
     "name": "Flesh Golem",
     "size": "Moyenne",
     "type": "construct",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -16480,7 +16480,7 @@
     "damage_immunities": [
       "foudre",
       "poison",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't adamantine"
     ],
     "condition_immunities": [
       {
@@ -16490,7 +16490,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -16500,12 +16500,12 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -16555,14 +16555,14 @@
         "desc": "The golem makes two slam attacks.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
         "attack_bonus": 7,
         "damage": [
@@ -16719,12 +16719,12 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -16971,7 +16971,7 @@
     "index": "gargoyle",
     "name": "Gargoyle",
     "size": "Moyenne",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "chaotique mauvais",
     "armor_class": [
       {
@@ -16995,7 +16995,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't adamantine"
     ],
     "damage_immunities": [
       "poison"
@@ -17003,12 +17003,12 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -17129,7 +17129,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -17139,7 +17139,7 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       }
     ],
@@ -17169,8 +17169,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "3d6"
@@ -17192,8 +17192,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "3d6"
@@ -17249,7 +17249,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       }
     ],
@@ -17347,8 +17347,8 @@
       "acide",
       "feu",
       "foudre",
-      "thunder",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "tonnerre",
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "froid",
@@ -17363,7 +17363,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -17373,17 +17373,17 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -17393,12 +17393,12 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       }
     ],
@@ -17518,7 +17518,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       }
     ],
@@ -18263,7 +18263,7 @@
     "senses": {
       "passive_perception": 14
     },
-    "languages": "Giant Eagle, understands Commun and Auran but can't speak",
+    "languages": "Giant Eagle, understands Commun and Aérien but can't speak",
     "challenge_rating": 1,
     "proficiency_bonus": 2,
     "xp": 200,
@@ -18866,7 +18866,7 @@
     "name": "Giant Owl",
     "size": "Grande",
     "type": "beast",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -19897,7 +19897,7 @@
     "name": "Gibbering Mouther",
     "size": "Moyenne",
     "type": "aberration",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -19924,7 +19924,7 @@
     "condition_immunities": [
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       }
     ],
@@ -20074,7 +20074,7 @@
       "froid",
       "feu",
       "foudre",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -20985,7 +20985,7 @@
     "condition_immunities": [
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       }
     ],
@@ -21116,7 +21116,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -21126,7 +21126,7 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       }
     ],
@@ -21168,8 +21168,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "2d6"
@@ -21494,7 +21494,7 @@
     "name": "Grick",
     "size": "Moyenne",
     "type": "monstrosity",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -21517,7 +21517,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -22189,7 +22189,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "psychic"
@@ -22872,7 +22872,7 @@
       "froid",
       "feu",
       "foudre",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -23276,7 +23276,7 @@
     "name": "Homunculus",
     "size": "Tiny",
     "type": "construct",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -23411,7 +23411,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "froid",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -23869,7 +23869,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -24005,7 +24005,7 @@
     "index": "ice-mephit",
     "name": "Ice Mephit",
     "size": "Small",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "neutral evil",
     "armor_class": [
       {
@@ -24064,7 +24064,7 @@
       "darkvision": "18 m.",
       "passive_perception": 12
     },
-    "languages": "Aquan, Auran",
+    "languages": "Aquan, Aérien",
     "challenge_rating": 0.5,
     "proficiency_bonus": 2,
     "xp": 100,
@@ -24242,7 +24242,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "froid",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -24305,8 +24305,8 @@
     "index": "invisible-stalker",
     "name": "Invisible Stalker",
     "size": "Moyenne",
-    "type": "elemental",
-    "alignment": "neutral",
+    "type": "Élémentaire",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -24347,7 +24347,7 @@
     ],
     "damage_vulnerabilities": [],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -24355,22 +24355,22 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -24380,17 +24380,17 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
         "index": "unconscious",
-        "name": "Unconscious",
+        "name": "inconscient",
         "url": "/api/2014/conditions/unconscious"
       }
     ],
@@ -24398,7 +24398,7 @@
       "darkvision": "18 m.",
       "passive_perception": 18
     },
-    "languages": "Auran, understands Commun but doesn't speak it",
+    "languages": "Aérien, understands Commun but doesn't speak it",
     "challenge_rating": 6,
     "proficiency_bonus": 3,
     "xp": 2300,
@@ -24419,14 +24419,14 @@
         "desc": "The stalker makes two slam attacks.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 10 (2d6 + 3) bludgeoning damage.",
         "attack_bonus": 6,
         "damage": [
@@ -24475,7 +24475,7 @@
       "feu",
       "poison",
       "psychic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't adamantine"
     ],
     "condition_immunities": [
       {
@@ -24485,7 +24485,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -24495,12 +24495,12 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -24548,7 +24548,7 @@
             "options": [
               {
                 "option_type": "action",
-                "action_name": "Slam",
+                "action_name": "Coup",
                 "count": "2",
                 "type": "corps à corps"
               },
@@ -24563,7 +24563,7 @@
                 "items": [
                   {
                     "option_type": "action",
-                    "action_name": "Slam",
+                    "action_name": "Coup",
                     "count": "1",
                     "type": "corps à corps"
                   },
@@ -24580,7 +24580,7 @@
         }
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +13 to hit, reach 5 ft., one target. Hit: 20 (3d8 + 7) bludgeoning damage.",
         "attack_bonus": 13,
         "damage": [
@@ -25014,7 +25014,7 @@
   {
     "index": "kraken",
     "name": "Kraken",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "monstrosity",
     "subtype": "titan",
     "alignment": "chaotique mauvais",
@@ -25083,7 +25083,7 @@
     "damage_resistances": [],
     "damage_immunities": [
       "foudre",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "condition_immunities": [
       {
@@ -25093,7 +25093,7 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       }
     ],
@@ -25687,7 +25687,7 @@
     ],
     "damage_immunities": [
       "poison",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "condition_immunities": [
       {
@@ -25697,7 +25697,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -25707,7 +25707,7 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
@@ -25739,7 +25739,7 @@
       },
       {
         "name": "Incantation",
-        "desc": "The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:\n\n- Cantrips (at will): mage hand, prestidigitation, ray of frost\n- 1st level (4 slots): detect magic, magic missile, shield, thunderwave\n- 2nd level (3 slots): acide arrow, detect thoughts, invisibility, mirror image\n- 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball\n- 4th level (3 slots): blight, dimension door\n- 5th level (3 slots): cloudkill, scrying\n- 6th level (1 slot): disintegrate, globe of invulnerability\n- 7th level (1 slot): finger of death, plane shift\n- 8th level (1 slot): dominate monster, power word stun\n- 9th level (1 slot): power word kill",
+        "desc": "The lich is an 18th-level spellcaster. Its spellcasting ability is Intelligence (spell save DC 20, +12 to hit with spell attacks). The lich has the following wizard spells prepared:\n\n- Cantrips (at will): mage hand, prestidigitation, ray of frost\n- 1st level (4 slots): detect magic, magic missile, shield, tonnerrewave\n- 2nd level (3 slots): acide arrow, detect thoughts, invisibility, mirror image\n- 3rd level (3 slots): animate dead, counterspell, dispel magic, fireball\n- 4th level (3 slots): blight, dimension door\n- 5th level (3 slots): cloudkill, scrying\n- 6th level (1 slot): disintegrate, globe of invulnerability\n- 7th level (1 slot): finger of death, plane shift\n- 8th level (1 slot): dominate monster, power word stun\n- 9th level (1 slot): power word kill",
         "spellcasting": {
           "level": 18,
           "ability": {
@@ -25800,7 +25800,7 @@
             {
               "name": "Thunderwave",
               "level": 1,
-              "url": "/api/2014/spells/thunderwave"
+              "url": "/api/2014/spells/tonnerrewave"
             },
             {
               "name": "Acid Arrow",
@@ -26150,7 +26150,7 @@
     "size": "Moyenne",
     "type": "Humanoïde",
     "subtype": "lizardfolk",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -26620,7 +26620,7 @@
     "index": "magma-mephit",
     "name": "Magma Mephit",
     "size": "Small",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "neutral evil",
     "armor_class": [
       {
@@ -26790,7 +26790,7 @@
     "index": "magmin",
     "name": "Magmin",
     "size": "Small",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "chaotic neutral",
     "armor_class": [
       {
@@ -26813,7 +26813,7 @@
     "proficiencies": [],
     "damage_vulnerabilities": [],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "feu"
@@ -27149,7 +27149,7 @@
       "froid",
       "feu",
       "foudre",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -27511,7 +27511,7 @@
     "size": "Moyenne",
     "type": "Humanoïde",
     "subtype": "merfolk",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -27764,7 +27764,7 @@
     "size": "Moyenne",
     "type": "monstrosity",
     "subtype": "shapechanger",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -27801,7 +27801,7 @@
     "condition_immunities": [
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       }
     ],
@@ -27862,8 +27862,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "1d8"
@@ -28004,7 +28004,7 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -28166,7 +28166,7 @@
       "feu"
     ],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "necrotic",
@@ -28180,7 +28180,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -28190,7 +28190,7 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
@@ -28346,7 +28346,7 @@
     "damage_immunities": [
       "necrotic",
       "poison",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "condition_immunities": [
       {
@@ -28356,7 +28356,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -28366,7 +28366,7 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
@@ -28661,7 +28661,7 @@
       "froid",
       "feu",
       "foudre",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -28828,7 +28828,7 @@
     "damage_resistances": [
       "froid",
       "feu",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -28972,7 +28972,7 @@
     "hit_points_roll": "8d10+24",
     "speed": {
       "walk": "18 m.",
-      "fly": "90 ft."
+      "fly": "27 m."
     },
     "strength": 18,
     "dexterity": 15,
@@ -29184,7 +29184,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -29194,7 +29194,7 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       }
     ],
@@ -29232,8 +29232,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "1d6"
@@ -29876,7 +29876,7 @@
     "name": "Otyugh",
     "size": "Grande",
     "type": "aberration",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -30310,7 +30310,7 @@
     "hit_points_roll": "7d10+21",
     "speed": {
       "walk": "18 m.",
-      "fly": "90 ft."
+      "fly": "27 m."
     },
     "strength": 18,
     "dexterity": 15,
@@ -30520,7 +30520,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "froid",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "feu",
@@ -30770,7 +30770,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "radiant",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [],
     "condition_immunities": [
@@ -30781,7 +30781,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -31537,7 +31537,7 @@
   {
     "index": "purple-worm",
     "name": "Purple Worm",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "monstrosity",
     "alignment": "unaligned",
     "armor_class": [
@@ -31688,7 +31688,7 @@
       "froid",
       "feu",
       "foudre",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -31874,7 +31874,7 @@
     ],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "condition_immunities": [],
     "senses": {
@@ -32625,7 +32625,7 @@
   {
     "index": "roc",
     "name": "Roc",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "monstrosity",
     "alignment": "unaligned",
     "armor_class": [
@@ -32932,12 +32932,12 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -33341,7 +33341,7 @@
     "index": "salamander",
     "name": "Salamander",
     "size": "Grande",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "neutral evil",
     "armor_class": [
       {
@@ -33366,7 +33366,7 @@
       "froid"
     ],
     "damage_resistances": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "feu"
@@ -33987,8 +33987,8 @@
       "froid",
       "feu",
       "foudre",
-      "thunder",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "tonnerre",
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "necrotic",
@@ -33997,7 +33997,7 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -34007,17 +34007,17 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -34027,12 +34027,12 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       }
     ],
@@ -34134,7 +34134,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       }
     ],
@@ -34159,7 +34159,7 @@
         "desc": "The shambling mound makes two slam attacks. If both attacks hit a Moyenne or smaller target, the target is grappled (escape DC 14), and the shambling mound uses its Engulf on it.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           },
@@ -34171,7 +34171,7 @@
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
         "attack_bonus": 7,
         "damage": [
@@ -34231,7 +34231,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -34241,7 +34241,7 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
@@ -34584,7 +34584,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       }
     ],
@@ -34693,7 +34693,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "radiant",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "necrotic",
@@ -34707,7 +34707,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -34981,8 +34981,8 @@
       "froid",
       "feu",
       "foudre",
-      "thunder",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "tonnerre",
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "necrotic",
@@ -34996,22 +34996,22 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -35021,17 +35021,17 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
         "index": "unconscious",
-        "name": "Unconscious",
+        "name": "inconscient",
         "url": "/api/2014/conditions/unconscious"
       }
     ],
@@ -35616,7 +35616,7 @@
     "index": "steam-mephit",
     "name": "Steam Mephit",
     "size": "Small",
-    "type": "elemental",
+    "type": "Élémentaire",
     "alignment": "neutral evil",
     "armor_class": [
       {
@@ -35830,7 +35830,7 @@
     "name": "Stone Giant",
     "size": "Très grande",
     "type": "giant",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -35992,7 +35992,7 @@
     "damage_immunities": [
       "poison",
       "psychic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't adamantine"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't adamantine"
     ],
     "condition_immunities": [
       {
@@ -36002,7 +36002,7 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -36012,12 +36012,12 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -36055,14 +36055,14 @@
         "desc": "The golem makes two slam attacks.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 19 (3d8 + 6) bludgeoning damage.",
         "attack_bonus": 10,
         "damage": [
@@ -36202,7 +36202,7 @@
     ],
     "damage_immunities": [
       "foudre",
-      "thunder"
+      "tonnerre"
     ],
     "condition_immunities": [],
     "senses": {
@@ -36435,7 +36435,7 @@
       "feu",
       "foudre",
       "poison",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -36554,27 +36554,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -36672,27 +36672,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -36781,27 +36781,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -36890,27 +36890,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -36999,27 +36999,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -37108,27 +37108,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -37224,27 +37224,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -37337,27 +37337,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -37445,22 +37445,22 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -37561,27 +37561,27 @@
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
@@ -37627,7 +37627,7 @@
   {
     "index": "tarrasque",
     "name": "Tarrasque",
-    "size": "Gargantuan",
+    "size": "Gigantesque",
     "type": "monstrosity",
     "subtype": "titan",
     "alignment": "unaligned",
@@ -37680,7 +37680,7 @@
     "damage_immunities": [
       "feu",
       "poison",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "condition_immunities": [
       {
@@ -37695,7 +37695,7 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
@@ -38188,14 +38188,14 @@
         "desc": "The treant makes two slam attacks.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +10 to hit, reach 5 ft., one target. Hit: 16 (3d6 + 6) bludgeoning damage.",
         "attack_bonus": 10,
         "damage": [
@@ -38648,7 +38648,7 @@
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
@@ -38909,7 +38909,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "necrotic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -39152,7 +39152,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "necrotic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -39342,7 +39342,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "necrotic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -39466,7 +39466,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "necrotic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [],
     "condition_immunities": [],
@@ -39870,7 +39870,7 @@
       "froid",
       "feu",
       "foudre",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -40157,7 +40157,7 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -40198,8 +40198,8 @@
     "index": "water-elemental",
     "name": "Water Elemental",
     "size": "Grande",
-    "type": "elemental",
-    "alignment": "neutral",
+    "type": "Élémentaire",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -40211,7 +40211,7 @@
     "hit_points_roll": "12d10+48",
     "speed": {
       "walk": "9 m.",
-      "swim": "90 ft."
+      "swim": "27 m."
     },
     "strength": 18,
     "dexterity": 14,
@@ -40223,7 +40223,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "acide",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "poison"
@@ -40231,22 +40231,22 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -40256,17 +40256,17 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
         "index": "unconscious",
-        "name": "Unconscious",
+        "name": "inconscient",
         "url": "/api/2014/conditions/unconscious"
       }
     ],
@@ -40281,7 +40281,7 @@
     "special_abilities": [
       {
         "name": "Water Form",
-        "desc": "The elemental can enter a hostile creature's space and stop there. It can move through a space as narrow as 1 inch wide without squeezing."
+        "desc": "L'élémentaire peut pénétrer dans l'espace d'une créature hostile et y rester. Il peut se déplacer au travers d'espaces larges de 2,50 cm sans être considéré comme passant dans un espace étroit."
       },
       {
         "name": "Freeze",
@@ -40292,17 +40292,17 @@
       {
         "name": "Attaques multiples",
         "multiattack_type": "actions",
-        "desc": "The elemental makes two slam attacks.",
+        "desc": "L'élémentaire effectue deux attaques de coup.",
         "actions": [
           {
-            "action_name": "Slam",
+            "action_name": "Coup",
             "count": "2",
             "type": "corps à corps"
           }
         ]
       },
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 13 (2d8 + 4) bludgeoning damage.",
         "attack_bonus": 7,
         "damage": [
@@ -40478,7 +40478,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -40595,7 +40595,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -40698,7 +40698,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -40861,7 +40861,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -40962,7 +40962,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41071,7 +41071,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41232,7 +41232,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41388,7 +41388,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41593,7 +41593,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41640,7 +41640,7 @@
     "size": "Moyenne",
     "type": "Humanoïde",
     "subtype": "human",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -41692,7 +41692,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41780,7 +41780,7 @@
     "size": "Moyenne",
     "type": "Humanoïde",
     "subtype": "human",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "dex",
@@ -41832,7 +41832,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -41969,7 +41969,7 @@
     "size": "Moyenne",
     "type": "Humanoïde",
     "subtype": "human",
-    "alignment": "neutral",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -42021,7 +42021,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -42140,7 +42140,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -42263,7 +42263,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -42385,7 +42385,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [],
     "damage_immunities": [
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "condition_immunities": [],
     "senses": {
@@ -42625,7 +42625,7 @@
     "damage_vulnerabilities": [],
     "damage_resistances": [
       "necrotic",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "poison"
@@ -42633,7 +42633,7 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
@@ -42803,8 +42803,8 @@
       "froid",
       "feu",
       "necrotic",
-      "thunder",
-      "bludgeoning, piercing, and slashing from nonmagical weapons"
+      "tonnerre",
+      "contondant, perforant et tranchant d'attaques non magiques"
     ],
     "damage_immunities": [
       "foudre",
@@ -42813,17 +42813,17 @@
     "condition_immunities": [
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
@@ -42833,17 +42833,17 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       },
       {
         "index": "unconscious",
-        "name": "Unconscious",
+        "name": "inconscient",
         "url": "/api/2014/conditions/unconscious"
       }
     ],
@@ -43213,8 +43213,8 @@
       "froid",
       "feu",
       "foudre",
-      "thunder",
-      "bludgeoning, piercing, and slashing from nonmagical weapons that aren't silvered"
+      "tonnerre",
+      "contondant, perforant et tranchant d'attaques non magiques that aren't silvered"
     ],
     "damage_immunities": [
       "necrotic",
@@ -43228,22 +43228,22 @@
       },
       {
         "index": "exhaustion",
-        "name": "Exhaustion",
+        "name": "épuisement",
         "url": "/api/2014/conditions/exhaustion"
       },
       {
         "index": "grappled",
-        "name": "Grappled",
+        "name": "agrippé",
         "url": "/api/2014/conditions/grappled"
       },
       {
         "index": "paralyzed",
-        "name": "Paralyzed",
+        "name": "paralysé",
         "url": "/api/2014/conditions/paralyzed"
       },
       {
         "index": "petrified",
-        "name": "Petrified",
+        "name": "pétrifié",
         "url": "/api/2014/conditions/petrified"
       },
       {
@@ -43253,12 +43253,12 @@
       },
       {
         "index": "prone",
-        "name": "Prone",
+        "name": "à terre",
         "url": "/api/2014/conditions/prone"
       },
       {
         "index": "restrained",
-        "name": "Restrained",
+        "name": "entravé",
         "url": "/api/2014/conditions/restrained"
       }
     ],
@@ -43470,8 +43470,8 @@
     "index": "xorn",
     "name": "Xorn",
     "size": "Moyenne",
-    "type": "elemental",
-    "alignment": "neutral",
+    "type": "Élémentaire",
+    "alignment": "neutre",
     "armor_class": [
       {
         "type": "armure naturelle",
@@ -43720,8 +43720,8 @@
           },
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "1d8"
@@ -43763,8 +43763,8 @@
         "damage": [
           {
             "damage_type": {
-              "index": "acide",
-              "name": "Acid",
+              "index": "acid",
+              "name": "Acide",
               "url": "/api/2014/damage-types/acide"
             },
             "damage_dice": "11d8"
@@ -44546,8 +44546,8 @@
                 "damage": [
                   {
                     "damage_type": {
-                      "index": "acide",
-                      "name": "Acid",
+                      "index": "acid",
+                      "name": "Acide",
                       "url": "/api/2014/damage-types/acide"
                     },
                     "damage_dice": "9d8"
@@ -45632,7 +45632,7 @@
     ],
     "actions": [
       {
-        "name": "Slam",
+        "name": "Coup",
         "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 4 (1d6 + 1) bludgeoning damage.",
         "attack_bonus": 3,
         "damage": [
